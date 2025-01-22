@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://crm5fx3nw0776"]
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_j6avh"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gp8p7"]
+albedo_color = Color(0.490362, 0.240997, 0, 1)
+
+[sub_resource type="TorusMesh" id="TorusMesh_2gb7w"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ftlyo"]
+albedo_color = Color(0, 0.580392, 0, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_1wsps"]
+
+[node name="Tree" type="StaticBody3D" groups=["Tree"]]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.979116, 0, 0, 0, 0.979116, 0, 0, 0, 0.979116, 0, 0, 0)
+mesh = SubResource("CylinderMesh_j6avh")
+surface_material_override/0 = SubResource("StandardMaterial3D_gp8p7")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.21309, 0, 0, 0, 1.35128, 0, 0, 0, 1.25248, -0.00638303, 1.0803, -0.00312912)
+mesh = SubResource("TorusMesh_2gb7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_ftlyo")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.939039, 0, 0, 0, 1.17983, 0, 0, 0, 0.934362, -0.012135, 1.60514, -0.0261757)
+mesh = SubResource("TorusMesh_2gb7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_ftlyo")
+
+[node name="MeshInstance3D4" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.709681, 0, 0, 0, 1.02854, 0, 0, 0, 0.688215, 0.0403565, 2.07664, 0.049413)
+mesh = SubResource("TorusMesh_2gb7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_ftlyo")
+
+[node name="MeshInstance3D5" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.348034, 0, 0, 0, 0.874361, 0, 0, 0, 0.341492, 0.0466734, 2.44284, -0.0207884)
+mesh = SubResource("TorusMesh_2gb7w")
+surface_material_override/0 = SubResource("StandardMaterial3D_ftlyo")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_1wsps")
