@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://e7jgogbjd1ao"
-path="res://.godot/imported/Star.png-3d2463ef4f98ea59d22a7cf94b1ff20b.ctex"
+uid="uid://b82jffj8oqu8y"
+path="res://.godot/imported/Crate.png-65aa2961108d0864930d64ce142e2303.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Loops/Star.png"
-dest_files=["res://.godot/imported/Star.png-3d2463ef4f98ea59d22a7cf94b1ff20b.ctex"]
+source_file="res://Mini/Physics/Crate.png"
+dest_files=["res://.godot/imported/Crate.png-65aa2961108d0864930d64ce142e2303.ctex"]
 
 [params]
 

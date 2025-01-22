@@ -1,7 +1,7 @@
 extends Node2D
 
 @export var spawn_count : int = 200
-var star_scene = preload("res://Loops/Star.tscn")
+var star_scene = preload("res://Mini/Loops/Star.tscn")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
