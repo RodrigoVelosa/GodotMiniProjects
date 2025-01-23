@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="CombatAction" load_steps=2 format=3 uid="uid://bxdwcglyurimo"]
+
+[ext_resource type="Script" path="res://TurnedBasedRpg/CombatAction.gd" id="1_ghpl6"]
+
+[resource]
+script = ExtResource("1_ghpl6")
+display_name = "Heal (5 HP)"
+damage = 0
+heal = 5
