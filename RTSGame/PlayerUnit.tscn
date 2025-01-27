@@ -6,6 +6,7 @@
 
 [node name="PlayerUnit" instance=ExtResource("1_kc1c3")]
 script = ExtResource("2_6qndh")
+is_player = true
 
 [node name="SelecionVisual" type="Sprite2D" parent="." index="0"]
 visible = false
