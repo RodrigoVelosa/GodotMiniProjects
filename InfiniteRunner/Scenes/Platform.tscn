@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://bfcgjx3kr6bsr"]
+
+[ext_resource type="Texture2D" uid="uid://cq6x0oe7jg8tj" path="res://InfiniteRunner/Assets/images/floor.png" id="1_jt6qm"]
+[ext_resource type="Script" path="res://InfiniteRunner/Scripts/Platform.gd" id="2_jehii"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k2ccx"]
+texture = ExtResource("1_jt6qm")
+texture_region_size = Vector2i(40, 40)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-19.9375, -20, 20.0625, -20, 20.0625, 20, -19.9375, 20.0625)
+1:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_hjpao"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_k2ccx")
+
+[node name="Platform" type="TileMapLayer"]
+tile_set = SubResource("TileSet_hjpao")
+rendering_quadrant_size = 40
+script = ExtResource("2_jehii")
