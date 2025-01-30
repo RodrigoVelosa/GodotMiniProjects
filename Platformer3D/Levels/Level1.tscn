@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://v7viq206ao5x"]
+
+[ext_resource type="ArrayMesh" uid="uid://d3ecuvi3x1r07" path="res://Platformer3D/Assets/Models/blockLarge.obj" id="1_1dy1h"]
+
+[node name="Main" type="Node3D"]
+
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+
+[node name="BlockLarge" type="MeshInstance3D" parent="StaticBody3D"]
+mesh = ExtResource("1_1dy1h")
+skeleton = NodePath("../..")

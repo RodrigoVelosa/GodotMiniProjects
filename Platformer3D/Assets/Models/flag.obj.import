@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cx3dwltkgs56g"
+path="res://.godot/imported/flag.obj-4e21bd39c2a2a08f7bd46a73e8446c8c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/flag.obj-4e21bd39c2a2a08f7bd46a73e8446c8c.mesh"]
+
+source_file="res://Platformer3D/Assets/Models/flag.obj"
+dest_files=["res://.godot/imported/flag.obj-4e21bd39c2a2a08f7bd46a73e8446c8c.mesh", "res://.godot/imported/flag.obj-4e21bd39c2a2a08f7bd46a73e8446c8c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
