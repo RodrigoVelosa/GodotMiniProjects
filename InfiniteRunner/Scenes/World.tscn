@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://d0pvr170b2v6y"]
+[gd_scene load_steps=17 format=3 uid="uid://d0pvr170b2v6y"]
 
 [ext_resource type="Script" path="res://InfiniteRunner/Scripts/ParallaxBG.gd" id="1_ejcfx"]
 [ext_resource type="Texture2D" uid="uid://h0r7tpwa5lvc" path="res://InfiniteRunner/Assets/images/background.png" id="1_tyd17"]
@@ -6,6 +6,11 @@
 [ext_resource type="Script" path="res://InfiniteRunner/Scripts/Player.gd" id="4_c1wgr"]
 [ext_resource type="Texture2D" uid="uid://c3qy1ltopqy4s" path="res://InfiniteRunner/Assets/images/player_spritesheet.png" id="4_lq8bp"]
 [ext_resource type="Script" path="res://InfiniteRunner/Scripts/PlatformSpawner.gd" id="6_5hwlf"]
+[ext_resource type="Script" path="res://InfiniteRunner/Scripts/Score.gd" id="7_5h16k"]
+[ext_resource type="Script" path="res://InfiniteRunner/Scripts/GameOver.gd" id="8_vlq10"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d2bx3"]
+size = Vector2(1153, 34)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_0oplw"]
 atlas = ExtResource("4_lq8bp")
@@ -79,6 +84,12 @@ offset_bottom = 644.0
 texture = ExtResource("3_jyg4p")
 stretch_mode = 1
 
+[node name="Area2D" type="Area2D" parent="ParallaxBG"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ParallaxBG/Area2D"]
+position = Vector2(575.5, 625)
+shape = SubResource("RectangleShape2D_d2bx3")
+
 [node name="Player" type="CharacterBody2D" parent="."]
 position = Vector2(105, 448)
 script = ExtResource("4_c1wgr")
@@ -94,3 +105,54 @@ shape = SubResource("CapsuleShape2D_e7jha")
 
 [node name="Platform Spawner" type="Node" parent="."]
 script = ExtResource("6_5hwlf")
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="Score" type="Label" parent="GUI"]
+offset_right = 1152.0
+offset_bottom = 48.0
+theme_override_font_sizes/font_size = 38
+text = "Score: "
+horizontal_alignment = 1
+vertical_alignment = 1
+script = ExtResource("7_5h16k")
+
+[node name="GameOver" type="CanvasLayer" parent="."]
+process_mode = 3
+visible = false
+script = ExtResource("8_vlq10")
+
+[node name="Panel" type="Panel" parent="GameOver"]
+offset_right = 1160.0
+offset_bottom = 648.0
+
+[node name="GameOver" type="Label" parent="GameOver"]
+offset_left = 8.0
+offset_top = 264.0
+offset_right = 1160.0
+offset_bottom = 317.0
+theme_override_font_sizes/font_size = 38
+text = "Game over!
+"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="FinalScore" type="Label" parent="GameOver"]
+offset_left = 8.0
+offset_top = 320.0
+offset_right = 1160.0
+offset_bottom = 373.0
+theme_override_font_sizes/font_size = 28
+text = "Score: "
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Retry" type="Button" parent="GameOver"]
+offset_left = 520.0
+offset_top = 456.0
+offset_right = 624.0
+offset_bottom = 504.0
+text = "Retry"
+
+[connection signal="body_entered" from="ParallaxBG/Area2D" to="ParallaxBG" method="_on_area_2d_body_entered"]
+[connection signal="pressed" from="GameOver/Retry" to="GameOver" method="_on_retry_pressed"]

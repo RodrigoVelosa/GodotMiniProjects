@@ -9,3 +9,4 @@ func _on_body_entered(body: Node2D) -> void:
 	if "Player" in body.name:
 		get_node("Sprite").hide()          
 		get_node("AudioStreamPlayer2D").play()
+		InfiniteRunnerGame.score += 1

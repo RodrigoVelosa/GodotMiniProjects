@@ -14,6 +14,10 @@ config/name="GodotMiniProjects"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+InfiniteRunnerGame="*res://InfiniteRunner/Scripts/InfiniteRunnerGame.gd"
+
 [display]
 
 window/stretch/mode="canvas_items"
