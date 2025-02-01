@@ -6,6 +6,8 @@ var gravity: float = 20.0
 
 var facing_angle: float
 
+var score: int
+
 @onready var model: MeshInstance3D = $Model
 
 func _physics_process(delta: float) -> void:
@@ -41,3 +43,6 @@ func _physics_process(delta: float) -> void:
 	
 func game_over() -> void:
 	get_tree().reload_current_scene()
+	
+func add_score(amount: int) -> void:
+	score += amount

@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://cn6qv6t4e5x5d"]
+
+[ext_resource type="Script" path="res://Platformer3D/Scripts/Player.gd" id="1_lt0w1"]
+[ext_resource type="ArrayMesh" uid="uid://gjuyfsvj5gs0" path="res://Platformer3D/Assets/Models/characterVampire.obj" id="2_53cov"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_8s5qx"]
+radius = 0.3
+height = 1.2
+
+[sub_resource type="LabelSettings" id="LabelSettings_ogkia"]
+font_size = 41
+outline_size = 5
+outline_color = Color(0, 0, 0, 1)
+
+[node name="Player" type="CharacterBody3D" groups=["Player"]]
+script = ExtResource("1_lt0w1")
+
+[node name="Model" type="MeshInstance3D" parent="."]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+mesh = ExtResource("2_53cov")
+skeleton = NodePath("../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.557687, 0)
+shape = SubResource("CapsuleShape3D_8s5qx")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.942169, 0.335139, 0, -0.335139, 0.942169, 0, 3, 5)
+current = true
+fov = 60.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 15.0
+offset_right = 254.0
+offset_bottom = 38.0
+text = "Score: 0"
+label_settings = SubResource("LabelSettings_ogkia")
