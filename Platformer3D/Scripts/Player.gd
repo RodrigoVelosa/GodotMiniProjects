@@ -9,6 +9,7 @@ var facing_angle: float
 var score: int
 
 @onready var model: MeshInstance3D = $Model
+@onready var score_text: Label = $ScoreText
 
 func _physics_process(delta: float) -> void:
 	# apply gravity if we're in the air
@@ -46,3 +47,4 @@ func game_over() -> void:
 	
 func add_score(amount: int) -> void:
 	score += amount
+	score_text.text = str("Score: ", score)
