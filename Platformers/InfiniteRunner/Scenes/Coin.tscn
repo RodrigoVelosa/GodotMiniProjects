@@ -1,0 +1,66 @@
+[gd_scene load_steps=8 format=3 uid="uid://dugfapc3ibng0"]
+
+[ext_resource type="Script" path="res://Platformers/InfiniteRunner/Scripts/Coin.gd" id="1_7kcgx"]
+[ext_resource type="Texture2D" uid="uid://wd7pn4cggkw2" path="res://Platformers/InfiniteRunner/Assets/images/coin.png" id="1_57ikx"]
+[ext_resource type="AudioStream" uid="uid://s4gvjodcni1a" path="res://Platformers/InfiniteRunner/Assets/audio/coin.ogg" id="3_uaw0r"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jcff0"]
+radius = 18.0
+
+[sub_resource type="Animation" id="Animation_edevf"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_74604"]
+resource_name = "Spin"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1e-05, 1), Vector2(-1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yvoyh"]
+_data = {
+"RESET": SubResource("Animation_edevf"),
+"Spin": SubResource("Animation_74604")
+}
+
+[node name="Coin" type="Area2D"]
+script = ExtResource("1_7kcgx")
+
+[node name="Sprite" type="Sprite2D" parent="."]
+texture = ExtResource("1_57ikx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_jcff0")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_uaw0r")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_yvoyh")
+}
+autoplay = "Spin"
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="finished" from="AudioStreamPlayer2D" to="." method="_on_audio_stream_player_2d_finished"]

@@ -1,0 +1,34 @@
+[gd_scene load_steps=6 format=3 uid="uid://bk3x0lav7xkjy"]
+
+[ext_resource type="Script" path="res://Platformers/Platformer3D/Scripts/Enemy.gd" id="1_msx10"]
+[ext_resource type="ArrayMesh" uid="uid://mvd3ie23bw83" path="res://Platformers/Platformer3D/Assets/Models/spikeBlock.obj" id="2_xycwi"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qn04j"]
+metallic = 0.63
+metallic_specular = 1.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2jy7l"]
+albedo_color = Color(1, 0, 0, 1)
+metallic = 1.0
+metallic_specular = 1.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_uo4py"]
+size = Vector3(0.731079, 0.684612, 0.8335)
+
+[node name="Enemy" type="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1.16572, 0)
+script = ExtResource("1_msx10")
+move_dir = Vector3(0, 3, 0)
+
+[node name="Model" type="MeshInstance3D" parent="."]
+mesh = ExtResource("2_xycwi")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_qn04j")
+surface_material_override/1 = SubResource("StandardMaterial3D_2jy7l")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.504862, 0)
+shape = SubResource("BoxShape3D_uo4py")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

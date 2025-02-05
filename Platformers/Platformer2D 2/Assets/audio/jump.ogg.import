@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://br15e76pd0lhp"
+path="res://.godot/imported/jump.ogg-96aa746a827614a0dbfa250925f7c12d.oggvorbisstr"
+
+[deps]
+
+source_file="res://Platformers/Platformer2D 2/Assets/audio/jump.ogg"
+dest_files=["res://.godot/imported/jump.ogg-96aa746a827614a0dbfa250925f7c12d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

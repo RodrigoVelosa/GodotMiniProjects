@@ -16,7 +16,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-InfiniteRunnerGame="*res://InfiniteRunner/Scripts/InfiniteRunnerGame.gd"
+InfiniteRunnerGame="*res://Platformers/InfiniteRunner/Scripts/InfiniteRunnerGame.gd"
 
 [display]
 
