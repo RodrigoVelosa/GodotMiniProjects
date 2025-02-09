@@ -4,7 +4,8 @@ class_name JumpState
 @onready var player: Node = $"../.."
 
 func reset_node() -> void:
-	pass
+	player.get_node("JumpAudio").play()
+	
 func _physics_process(delta: float) -> void:
 	if player.current_state == "Jump":
 		if Input.is_action_just_pressed("move_right"):

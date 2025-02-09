@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://ceo6wqk6a8g1p"]
+[gd_scene load_steps=13 format=3 uid="uid://ceo6wqk6a8g1p"]
 
 [ext_resource type="Script" path="res://Platformers/Platformer2D 2/Scripts/Player/Player.gd" id="1_hsrkc"]
 [ext_resource type="Texture2D" uid="uid://d3les0mlqncrc" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tiles/Characters/tile_0000.png" id="2_pu0g1"]
@@ -8,6 +8,8 @@
 [ext_resource type="Script" path="res://Platformers/Platformer2D 2/Scenes/Player/States/FallState.gd" id="5_koepu"]
 [ext_resource type="Script" path="res://Platformers/Platformer2D 2/Scenes/Player/States/JumpState.gd" id="6_nvtes"]
 [ext_resource type="Script" path="res://Platformers/Platformer2D 2/Scenes/Player/States/MoveState.gd" id="7_v3vej"]
+[ext_resource type="AudioStream" uid="uid://br15e76pd0lhp" path="res://Platformers/Platformer2D 2/Assets/audio/jump.ogg" id="9_luqma"]
+[ext_resource type="AudioStream" uid="uid://5ajs6cxifh7g" path="res://Platformers/Platformer2D 2/Assets/audio/audiomass-output.mp3" id="10_m0sir"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_75r1m"]
 animations = [{
@@ -63,3 +65,9 @@ script = ExtResource("6_nvtes")
 
 [node name="MoveState" type="Node" parent="States"]
 script = ExtResource("7_v3vej")
+
+[node name="JumpAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_luqma")
+
+[node name="HitAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_m0sir")

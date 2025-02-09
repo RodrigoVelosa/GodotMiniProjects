@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 InfiniteRunnerGame="*res://Platformers/InfiniteRunner/Scripts/InfiniteRunnerGame.gd"
+Platformer2DGame="*res://Platformers/Platformer2D 2/Scripts/Platformer2DGame.gd"
 
 [display]
 
