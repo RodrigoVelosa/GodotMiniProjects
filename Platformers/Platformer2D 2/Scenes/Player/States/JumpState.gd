@@ -5,7 +5,6 @@ class_name JumpState
 
 func reset_node() -> void:
 	pass
-
 func _physics_process(delta: float) -> void:
 	if player.current_state == "Jump":
 		if Input.is_action_just_pressed("move_right"):

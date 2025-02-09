@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://xb21520gdwxh"]
+
+[ext_resource type="Script" path="res://Platformers/Platformer2D 2/Scripts/Objects/Coin.gd" id="1_eecn8"]
+[ext_resource type="Texture2D" uid="uid://dm8bxs6sskhbx" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tiles/tile_0151.png" id="1_eyj87"]
+[ext_resource type="Texture2D" uid="uid://ctv357qh2rrw6" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tiles/tile_0152.png" id="2_4wj1i"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_k2fku"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_eyj87")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_4wj1i")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qbn0y"]
+radius = 8.0
+
+[node name="Coin" type="Area2D"]
+script = ExtResource("1_eecn8")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_k2fku")
+autoplay = "default"
+frame = 1
+frame_progress = 0.0106228
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_qbn0y")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

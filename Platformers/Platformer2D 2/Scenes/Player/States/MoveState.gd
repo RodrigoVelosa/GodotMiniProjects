@@ -12,7 +12,7 @@ func _physics_process(delta: float) -> void:
 			var target_vel: float = min(player.velocity.x + player.acceleration * delta, player.max_speed * delta)
 			player.velocity.x = lerp(player.velocity.x, target_vel, player.weight)
 		elif Input.is_action_pressed("move_left"):
-			var target_vel: float = min(player.velocity.x - player.acceleration * delta, -player.max_speed * delta)
+			var target_vel: float = max(player.velocity.x - player.acceleration * delta, -player.max_speed * delta)
 			player.velocity.x = lerp(player.velocity.x, target_vel, player.weight)
 		else:
 			player.change_state("Idle")

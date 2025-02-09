@@ -28,7 +28,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Move",
-"speed": 5.0
+"speed": 7.0
 }]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_me5fe"]
@@ -42,7 +42,6 @@ script = ExtResource("1_hsrkc")
 sprite_frames = SubResource("SpriteFrames_75r1m")
 animation = &"Move"
 autoplay = "Move"
-frame_progress = 0.441585
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 2)

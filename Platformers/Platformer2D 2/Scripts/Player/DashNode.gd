@@ -9,5 +9,5 @@ func _physics_process(delta: float) -> void:
 	
 	var tween = get_tree().create_tween()
 	tween.tween_property(self, "modulate:a", 0, 0.2)
-	if modulate.a < 0.01:
+	if modulate.a < 0.05:
 		queue_free()

@@ -38,4 +38,4 @@ func change_state(new_state_name: String) -> void:
 	current_state = new_state_name
 	for i in get_node("States").get_child_count():
 		if new_state_name in get_node("States").get_child(i).name:
-			get_node("States").get_child(i).reset_node
+			get_node("States").get_child(i).reset_node()

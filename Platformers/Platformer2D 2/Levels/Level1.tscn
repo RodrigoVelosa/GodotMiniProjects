@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=4 uid="uid://k5bqum3j6rkd"]
+[gd_scene load_steps=9 format=4 uid="uid://k5bqum3j6rkd"]
 
 [ext_resource type="Texture2D" uid="uid://brduuwtutrg5n" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tilemap/tilemap-backgrounds.png" id="1_l6qks"]
 [ext_resource type="Texture2D" uid="uid://dtlkxxjgx7kgk" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tilemap/tilemap_packed.png" id="1_s1ulq"]
 [ext_resource type="PackedScene" uid="uid://ceo6wqk6a8g1p" path="res://Platformers/Platformer2D 2/Scenes/Player/Player.tscn" id="2_iyabl"]
+[ext_resource type="PackedScene" uid="uid://xb21520gdwxh" path="res://Platformers/Platformer2D 2/Scenes/Objects/Coin.tscn" id="4_gak0k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cg0a"]
 texture = ExtResource("1_l6qks")
@@ -384,3 +385,14 @@ rendering_quadrant_size = 18
 
 [node name="Player" parent="." instance=ExtResource("2_iyabl")]
 position = Vector2(54, 305)
+
+[node name="Coins" type="Node2D" parent="."]
+
+[node name="Coin" parent="Coins" instance=ExtResource("4_gak0k")]
+position = Vector2(208, 424)
+
+[node name="Coin2" parent="Coins" instance=ExtResource("4_gak0k")]
+position = Vector2(280, 424)
+
+[node name="Coin3" parent="Coins" instance=ExtResource("4_gak0k")]
+position = Vector2(344, 424)
