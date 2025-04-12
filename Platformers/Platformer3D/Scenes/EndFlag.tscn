@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://buo5spa2rxnuy"]
 
-[ext_resource type="Script" path="res://Platformers/Platformer3D/Scripts/EndFlag.gd" id="1_qenup"]
+[ext_resource type="Script" uid="uid://clth6wk4nyeam" path="res://Platformers/Platformer3D/Scripts/EndFlag.gd" id="1_qenup"]
 [ext_resource type="ArrayMesh" uid="uid://cx3dwltkgs56g" path="res://Platformers/Platformer3D/Assets/Models/flag.obj" id="2_l6pc7"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_vv6ft"]

@@ -1,14 +1,14 @@
 [gd_scene load_steps=10 format=3 uid="uid://bogcl1orjtdb6"]
 
 [ext_resource type="PackedScene" uid="uid://dpmb7ttxugy7" path="res://TurnedBasedRpg/Character.tscn" id="1_ail02"]
-[ext_resource type="Script" path="res://TurnedBasedRpg/TurnManager.gd" id="1_ednmm"]
+[ext_resource type="Script" uid="uid://cuy3d2s2pncya" path="res://TurnedBasedRpg/TurnManager.gd" id="1_ednmm"]
 [ext_resource type="Texture2D" uid="uid://b5dt4pyu8675i" path="res://TurnedBasedRpg/Sprites/Dragon.png" id="3_vymgr"]
 [ext_resource type="Resource" uid="uid://c03ippm48q2r8" path="res://TurnedBasedRpg/Combat Actions/Slash.tres" id="3_w3i4b"]
 [ext_resource type="Texture2D" uid="uid://brn53g7l1f8rf" path="res://TurnedBasedRpg/Sprites/Reptile.png" id="4_33m8w"]
 [ext_resource type="Resource" uid="uid://bxdwcglyurimo" path="res://TurnedBasedRpg/Combat Actions/Heal.tres" id="4_et7ci"]
 [ext_resource type="Resource" uid="uid://c28frpav8nr1o" path="res://TurnedBasedRpg/Combat Actions/Stomp.tres" id="5_sr61s"]
-[ext_resource type="Script" path="res://TurnedBasedRpg/CombatActionButton.gd" id="8_4txg4"]
-[ext_resource type="Script" path="res://TurnedBasedRpg/PlayerUI.gd" id="8_boiy3"]
+[ext_resource type="Script" uid="uid://btjbep5huskw5" path="res://TurnedBasedRpg/CombatActionButton.gd" id="8_4txg4"]
+[ext_resource type="Script" uid="uid://dsbgc3jb6b763" path="res://TurnedBasedRpg/PlayerUI.gd" id="8_boiy3"]
 
 [node name="BattleScene" type="Node2D" node_paths=PackedStringArray("player_char", "enemy_char")]
 script = ExtResource("1_ednmm")

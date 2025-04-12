@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bfcgjx3kr6bsr"]
 
 [ext_resource type="Texture2D" uid="uid://cq6x0oe7jg8tj" path="res://Platformers/InfiniteRunner/Assets/images/floor.png" id="1_jt6qm"]
-[ext_resource type="Script" path="res://Platformers/InfiniteRunner/Scripts/Platform.gd" id="2_jehii"]
+[ext_resource type="Script" uid="uid://wwjefbildqcf" path="res://Platformers/InfiniteRunner/Scripts/Platform.gd" id="2_jehii"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k2ccx"]
 texture = ExtResource("1_jt6qm")

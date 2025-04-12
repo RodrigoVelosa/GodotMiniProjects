@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bvjjndhw357t3"]
 
-[ext_resource type="Script" path="res://Platformers/Platformer3D/Scripts/Spikes.gd" id="1_lhqqm"]
+[ext_resource type="Script" uid="uid://ctwdkrd6u1bit" path="res://Platformers/Platformer3D/Scripts/Spikes.gd" id="1_lhqqm"]
 [ext_resource type="ArrayMesh" uid="uid://ckhit4w6oius4" path="res://Platformers/Platformer3D/Assets/Models/spikesLarge.obj" id="2_cj24o"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5wpiw"]

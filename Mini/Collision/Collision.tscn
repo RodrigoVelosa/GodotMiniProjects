@@ -1,6 +1,6 @@
 [gd_scene load_steps=14 format=3 uid="uid://cfk880iqxxwm1"]
 
-[ext_resource type="Script" path="res://Mini/Collision/PlayerMovement.gd" id="1_bu8ys"]
+[ext_resource type="Script" uid="uid://2r3assh8vm6q" path="res://Mini/Collision/PlayerMovement.gd" id="1_bu8ys"]
 [ext_resource type="PackedScene" uid="uid://crm5fx3nw0776" path="res://Mini/Collision/Tree.tscn" id="2_y3bjx"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_5jegu"]

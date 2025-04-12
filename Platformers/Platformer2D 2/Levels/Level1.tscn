@@ -1,9 +1,10 @@
-[gd_scene load_steps=9 format=4 uid="uid://k5bqum3j6rkd"]
+[gd_scene load_steps=10 format=4 uid="uid://k5bqum3j6rkd"]
 
 [ext_resource type="Texture2D" uid="uid://brduuwtutrg5n" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tilemap/tilemap-backgrounds.png" id="1_l6qks"]
 [ext_resource type="Texture2D" uid="uid://dtlkxxjgx7kgk" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tilemap/tilemap_packed.png" id="1_s1ulq"]
 [ext_resource type="PackedScene" uid="uid://ceo6wqk6a8g1p" path="res://Platformers/Platformer2D 2/Scenes/Player/Player.tscn" id="2_iyabl"]
 [ext_resource type="PackedScene" uid="uid://xb21520gdwxh" path="res://Platformers/Platformer2D 2/Scenes/Objects/Coin.tscn" id="4_gak0k"]
+[ext_resource type="PackedScene" uid="uid://d1ay41tdtm44b" path="res://Platformers/Platformer2D 2/Scenes/Enemies/Alien.tscn" id="5_6iu73"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7cg0a"]
 texture = ExtResource("1_l6qks")
@@ -396,3 +397,11 @@ position = Vector2(280, 424)
 
 [node name="Coin3" parent="Coins" instance=ExtResource("4_gak0k")]
 position = Vector2(344, 424)
+
+[node name="Enemies" type="Node2D" parent="."]
+
+[node name="Alien" parent="Enemies" instance=ExtResource("5_6iu73")]
+position = Vector2(456, 168)
+
+[node name="Alien2" parent="Enemies" instance=ExtResource("5_6iu73")]
+position = Vector2(256, 424)

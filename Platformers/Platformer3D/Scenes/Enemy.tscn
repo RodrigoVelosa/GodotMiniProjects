@@ -1,6 +1,6 @@
 [gd_scene load_steps=6 format=3 uid="uid://bk3x0lav7xkjy"]
 
-[ext_resource type="Script" path="res://Platformers/Platformer3D/Scripts/Enemy.gd" id="1_msx10"]
+[ext_resource type="Script" uid="uid://cwovhrdv4j6p1" path="res://Platformers/Platformer3D/Scripts/Enemy.gd" id="1_msx10"]
 [ext_resource type="ArrayMesh" uid="uid://mvd3ie23bw83" path="res://Platformers/Platformer3D/Assets/Models/spikeBlock.obj" id="2_xycwi"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qn04j"]

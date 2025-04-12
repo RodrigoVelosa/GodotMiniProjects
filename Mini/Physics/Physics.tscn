@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://cqja27t1osym1"]
 
 [ext_resource type="Texture2D" uid="uid://byw376mi6rm7p" path="res://Mini/Physics/PhysicsCharacter.png" id="1_4cq7r"]
-[ext_resource type="Script" path="res://Mini/Physics/PhysicsPlayer.gd" id="1_4jjkf"]
+[ext_resource type="Script" uid="uid://ciophe1briuth" path="res://Mini/Physics/PhysicsPlayer.gd" id="1_4jjkf"]
 [ext_resource type="PackedScene" uid="uid://cw4tn4og178gp" path="res://Mini/Physics/Crate.tscn" id="3_5log5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d8jf8"]

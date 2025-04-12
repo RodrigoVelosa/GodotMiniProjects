@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://f52mdnw6e82s"]
 
-[ext_resource type="Script" path="res://SurvivalGame/Scripts/NeedUiBar.gd" id="1_dh3rj"]
+[ext_resource type="Script" uid="uid://duatpjgpo4vmi" path="res://SurvivalGame/Scripts/NeedUiBar.gd" id="1_dh3rj"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jgs11"]
 bg_color = Color(0.136826, 0.136826, 0.136826, 1)

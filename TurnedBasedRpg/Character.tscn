@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dpmb7ttxugy7"]
 
 [ext_resource type="Texture2D" uid="uid://b5dt4pyu8675i" path="res://TurnedBasedRpg/Sprites/Dragon.png" id="1_cp8lg"]
-[ext_resource type="Script" path="res://TurnedBasedRpg/Character.gd" id="1_mrftr"]
+[ext_resource type="Script" uid="uid://dt0dw8swcumnc" path="res://TurnedBasedRpg/Character.gd" id="1_mrftr"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rfvqq"]
 bg_color = Color(0.164706, 0.145098, 0.0627451, 1)

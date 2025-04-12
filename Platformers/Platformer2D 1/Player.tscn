@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://bu24l68d7a44a"]
 
-[ext_resource type="Script" path="res://Platformers/Platformer2D 1/Player.gd" id="1_0wctl"]
+[ext_resource type="Script" uid="uid://c75y201cfxlfn" path="res://Platformers/Platformer2D 1/Player.gd" id="1_0wctl"]
 [ext_resource type="Texture2D" uid="uid://c3nvqgsbwhv3a" path="res://Platformers/Platformer2D 1/Sprites/Characters/character_0004.png" id="2_ktb1p"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dxbgx"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bo3pyh4yj14pr"]
 
-[ext_resource type="Script" path="res://Platformers/Platformer2D 1/Spikes.gd" id="1_re1re"]
+[ext_resource type="Script" uid="uid://ceifoe5rwey7d" path="res://Platformers/Platformer2D 1/Spikes.gd" id="1_re1re"]
 [ext_resource type="Texture2D" uid="uid://bj4phc7ceh37p" path="res://Platformers/Platformer2D 1/Sprites/Objects/tile_0068.png" id="2_g46jt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l41ta"]

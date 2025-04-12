@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="CombatAction" load_steps=2 format=3 uid="uid://bxdwcglyurimo"]
 
-[ext_resource type="Script" path="res://TurnedBasedRpg/CombatAction.gd" id="1_ghpl6"]
+[ext_resource type="Script" uid="uid://bekbxp7rgptjc" path="res://TurnedBasedRpg/CombatAction.gd" id="1_ghpl6"]
 
 [resource]
 script = ExtResource("1_ghpl6")

@@ -1,11 +1,11 @@
 [gd_scene load_steps=24 format=3 uid="uid://05cg0n3svb3b"]
 
 [ext_resource type="ArrayMesh" uid="uid://cuitpjlmf055q" path="res://SurvivalGame/Assets/Models/Terrain.obj" id="1_tmtdc"]
-[ext_resource type="Script" path="res://SurvivalGame/Scripts/Player.gd" id="2_fj4fk"]
-[ext_resource type="Script" path="res://SurvivalGame/Scripts/PlayerNeeds.gd" id="3_h5f0c"]
-[ext_resource type="Script" path="res://SurvivalGame/Scripts/DayNightCycle.gd" id="3_held5"]
+[ext_resource type="Script" uid="uid://cspedjte3bg33" path="res://SurvivalGame/Scripts/Player.gd" id="2_fj4fk"]
+[ext_resource type="Script" uid="uid://dcfh485fmx27y" path="res://SurvivalGame/Scripts/PlayerNeeds.gd" id="3_h5f0c"]
+[ext_resource type="Script" uid="uid://cqc2t3tu1dwom" path="res://SurvivalGame/Scripts/DayNightCycle.gd" id="3_held5"]
 [ext_resource type="PackedScene" uid="uid://f52mdnw6e82s" path="res://SurvivalGame/Scenes/NeedUiBar.tscn" id="3_jqnbt"]
-[ext_resource type="Script" path="res://SurvivalGame/Scripts/Need.gd" id="3_t2ego"]
+[ext_resource type="Script" uid="uid://qhxcouanboux" path="res://SurvivalGame/Scripts/Need.gd" id="3_t2ego"]
 [ext_resource type="PackedScene" uid="uid://c2p3g02rkbd6p" path="res://SurvivalGame/Scenes/Tree.tscn" id="4_58743"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6ieci"]

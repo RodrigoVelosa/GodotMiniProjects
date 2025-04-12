@@ -1,7 +1,7 @@
 [gd_scene load_steps=9 format=4 uid="uid://cs3calm5chuwc"]
 
 [ext_resource type="Texture2D" uid="uid://ccfkp77jxdk5w" path="res://RTSGame/Sprites/tilemap.png" id="1_pv2o3"]
-[ext_resource type="Script" path="res://RTSGame/GameManager.gd" id="1_wppxy"]
+[ext_resource type="Script" uid="uid://wjvb37dq1pro" path="res://RTSGame/GameManager.gd" id="1_wppxy"]
 [ext_resource type="PackedScene" uid="uid://crumfxnwsh3sx" path="res://RTSGame/PlayerUnit.tscn" id="2_igw78"]
 [ext_resource type="PackedScene" uid="uid://b62juj1bjlygb" path="res://RTSGame/EnemyUnit.tscn" id="3_tdxwr"]
 

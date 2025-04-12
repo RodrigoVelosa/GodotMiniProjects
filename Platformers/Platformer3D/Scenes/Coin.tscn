@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://dqxya6xc5bfw3"]
 
-[ext_resource type="Script" path="res://Platformers/Platformer3D/Scripts/Coin.gd" id="1_g7vj5"]
+[ext_resource type="Script" uid="uid://byr644sbelltb" path="res://Platformers/Platformer3D/Scripts/Coin.gd" id="1_g7vj5"]
 [ext_resource type="ArrayMesh" uid="uid://cge2fuclikg8j" path="res://Platformers/Platformer3D/Assets/Models/coinGold.obj" id="2_mo7xt"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_u8rwv"]

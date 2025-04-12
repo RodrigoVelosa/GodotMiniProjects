@@ -1,13 +1,13 @@
 [gd_scene load_steps=17 format=3 uid="uid://d0pvr170b2v6y"]
 
-[ext_resource type="Script" path="res://Platformers/InfiniteRunner/Scripts/ParallaxBG.gd" id="1_ejcfx"]
+[ext_resource type="Script" uid="uid://bnw5eje22at4" path="res://Platformers/InfiniteRunner/Scripts/ParallaxBG.gd" id="1_ejcfx"]
 [ext_resource type="Texture2D" uid="uid://h0r7tpwa5lvc" path="res://Platformers/InfiniteRunner/Assets/images/background.png" id="1_tyd17"]
 [ext_resource type="Texture2D" uid="uid://slfar6ks51ak" path="res://Platformers/InfiniteRunner/Assets/images/water.png" id="3_jyg4p"]
-[ext_resource type="Script" path="res://Platformers/InfiniteRunner/Scripts/Player.gd" id="4_c1wgr"]
+[ext_resource type="Script" uid="uid://crsj7f88ueeis" path="res://Platformers/InfiniteRunner/Scripts/Player.gd" id="4_c1wgr"]
 [ext_resource type="Texture2D" uid="uid://c3qy1ltopqy4s" path="res://Platformers/InfiniteRunner/Assets/images/player_spritesheet.png" id="4_lq8bp"]
-[ext_resource type="Script" path="res://Platformers/InfiniteRunner/Scripts/PlatformSpawner.gd" id="6_5hwlf"]
-[ext_resource type="Script" path="res://Platformers/InfiniteRunner/Scripts/Score.gd" id="7_5h16k"]
-[ext_resource type="Script" path="res://Platformers/InfiniteRunner/Scripts/GameOver.gd" id="8_vlq10"]
+[ext_resource type="Script" uid="uid://blb1e384kwuio" path="res://Platformers/InfiniteRunner/Scripts/PlatformSpawner.gd" id="6_5hwlf"]
+[ext_resource type="Script" uid="uid://hedmgb7kcmgk" path="res://Platformers/InfiniteRunner/Scripts/Score.gd" id="7_5h16k"]
+[ext_resource type="Script" uid="uid://ue8v4qod6llq" path="res://Platformers/InfiniteRunner/Scripts/GameOver.gd" id="8_vlq10"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d2bx3"]
 size = Vector2(1153, 34)

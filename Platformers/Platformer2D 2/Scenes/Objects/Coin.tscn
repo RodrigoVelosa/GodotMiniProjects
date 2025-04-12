@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=3 uid="uid://xb21520gdwxh"]
 
-[ext_resource type="Script" path="res://Platformers/Platformer2D 2/Scripts/Objects/Coin.gd" id="1_eecn8"]
+[ext_resource type="Script" uid="uid://6i2msw56m0pf" path="res://Platformers/Platformer2D 2/Scripts/Objects/Coin.gd" id="1_eecn8"]
 [ext_resource type="Texture2D" uid="uid://dm8bxs6sskhbx" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tiles/tile_0151.png" id="1_eyj87"]
 [ext_resource type="Texture2D" uid="uid://ctv357qh2rrw6" path="res://Platformers/Platformer2D 2/Assets/kenney_pixel-platformer/Tiles/tile_0152.png" id="2_4wj1i"]
 [ext_resource type="AudioStream" uid="uid://stx1ceiifggv" path="res://Platformers/Platformer2D 2/Assets/audio/coin.ogg" id="4_eheyu"]
