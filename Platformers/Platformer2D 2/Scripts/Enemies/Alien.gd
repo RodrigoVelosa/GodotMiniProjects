@@ -28,3 +28,22 @@ func _physics_process(delta: float) -> void:
 		ray_wallcheck.set_target_position(Vector2(12, 0))
 
 	move_and_slide()
+
+
+func _on_head_damage_body_entered(body: Node2D) -> void:
+	if "Player" in body.name:
+		death()
+
+
+func _on_player_damage_body_entered(body: Node2D) -> void:
+	if "Player" in body.name:
+		Platformer2DGame.health -= 1
+		body.get_node("HitAudio").play()
+
+
+func _on_death_finished() -> void:
+	queue_free()
+
+func death():
+	position = Vector2(10000, 10000)
+	$death.play()
